@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comspatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval</title>
+</head>
+<body>
+    <form action="/predict" method="POST"><br>
+        <label >gender</label>
+        <input type="value" name="Gender"><br>
+        <label >married</label>
+        <input type="value" name="Married"><br>
+        <label >dependents</label>
+        <input type="value" name="Dependents"><br>
+        <label >education</label>
+        <input type="value" name="Education" ><br>
+        <label >Self_Employed</label>
+        <input type="value" name="Self_Employed" ><br>
+        <label >ApplicantIncome</label>
+        <input type="value" name="ApplicantIncome"><br>
+        <label >CoapplicantIncome</label>
+        <input type="value" name="CoapplicantIncome"><br>
+        <label >LoanAmount</label>
+        <input type="value" name="LoanAmount" ><br>
+        <label >Loan_Amount_Term</label>
+        <input type="value" name="Loan_Amount_Term"><br>
+        <label >Credit_History</label>
+        <input type="value" name="Credit_History"><br>
+        <label >Property_Area</label>
+        <input type="value" name="Property_Area"><br>
+        
+        <input type="submit" name="submit" >
+        {% if loan_status == 'Y' %}
+        <p> Your loan is Approved</p>
+        {% else %}
+        <p> Sorry, Your loan is denied</p>
+        {% endif %}
+
+
+
+
+
+    </form>
+</body>
+</html>
